@@ -66,11 +66,11 @@ export default function About() {
             {/* Bottom Row */}
             <div className="mt-2 flex items-center gap-1.5">
               {/* Experience */}
-              <InfoCard
+              {/* <InfoCard
                 icon={<FaBriefcase />}
                 title="2+ Years"
                 subtitle="Experience"
-              />
+              /> */}
 
               {/* Education */}
               <InfoCard
@@ -86,11 +86,11 @@ export default function About() {
                 subtitle="Available Worldwide"
               />
                {/* Availability */}
-              <InfoCard
+              {/* <InfoCard
                 icon={<FaClock />}
                 title="Freelance"
                 subtitle="Available for Work"
-              />
+              /> */}
 
               {/* Download CV */}
               <a

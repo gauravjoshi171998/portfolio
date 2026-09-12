@@ -4,7 +4,8 @@ import { FaEnvelope, FaGithub, FaLinkedinIn, FaWhatsapp, FaEye, FaPaperPlane } f
 
 export default function Hero() {
   return (
-    <section id="home" className="banner-bg grid items-center gap-5 py-12 lg:grid-cols-[.9fr_1.1fr]">
+    <div className="banner-bg">
+    <section id="home" className="section-shell grid items-center gap-5 py-12 lg:grid-cols-[.9fr_1.1fr]">
       <div>
         <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#07142d] px-3 py-1.5 text-[14px] text-slate-200">
           <i className="h-2 w-2 rounded-full bg-green-400 shadow-[0_0_10px_#22c55e]" />
@@ -18,7 +19,7 @@ export default function Hero() {
           Frontend Developer
         </h1>
 
-        <p className="mt-5 max-w-xl leading-[1.6] text-slate-400 sm:text-[16px]">
+        <p className="mt-5 max-w-xl leading-[1.6] text-[#fff] sm:text-[16px]">
           I build modern, responsive and user-friendly websites that help businesses grow and stand out.
         </p>
 
@@ -33,12 +34,13 @@ export default function Hero() {
 
         <div className="mt-5 flex gap-2.5">
           {[FaGithub, FaLinkedinIn, FaWhatsapp, FaEnvelope].map((Icon, i) => (
-            <a key={i} href={i === 3 ? "mailto:gauravjoshi.dev@gmail.com" : "#"} className="grid h-9 w-9 place-items-center rounded-full border border-slate-700 bg-[#07122b] text-sm hover:border-purple-400">
+            <a key={i} href={i === 3 ? "mailto:gauravjoshi897@gmail.com" : "#"} className="grid h-10 w-10 place-items-center rounded-full border border-slate-700 bg-[#07122b] text-sm hover:border-purple-400">
               <Icon />
             </a>
           ))}
         </div>
       </div>
     </section>
+    </div>
   );
 }

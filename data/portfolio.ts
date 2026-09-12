@@ -285,23 +285,33 @@ export const process = [
 
 export const projects = [
   {
-    title: "E-Commerce Website",
-    image: "/images/project-ecommerce.svg",
-    tags: ["React", "Node.js", "MongoDB"],
+    title: "01-WiRE",
+    image: "/images/urban-vague.webp",
+    tags: ["React", "Tailwind CSS"],
+    url:"http://5.75.140.88:3011/"
   },
   {
-    title: "Task Management App",
-    image: "/images/project-task.svg",
-    tags: ["React", "Tailwind", "Firebase"],
+    title: "BLOCKCHAIN",
+    image: "/images/partners.png",
+    tags: ["React", "Tailwind"],
+    url:"https://pr.blockchainpress.media/"
   },
   {
-    title: "Business Website",
-    image: "/images/project-business.svg",
-    tags: ["WordPress", "PHP"],
+    title: "BLOCKCHAIN MARKETING",
+    image: "/images/blockchain.jpeg",
+    tags: ["React", "Tailwind"],
+    url:"https://marketing.blockchainpress.media/"
   },
   {
-    title: "Portfolio Website",
-    image: "/images/project-portfolio.svg",
-    tags: ["React", "Tailwind", "Vercel"],
+    title: "Pawness Shop",
+    image: "/images/pawness.jpg",
+    tags: ["Wordpress", "JS", "CSS"],
+    url:"https://shop-pawness.com/"
   },
+    {
+    title: "Pawness Shop",
+    image: "/images/pawness.jpg",
+    tags: ["Wordpress", "JS", "CSS"],
+    url:"https://shop-pawness.com/"
+  }
 ];

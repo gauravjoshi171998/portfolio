@@ -1,9 +1,13 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaEye, FaArrowRight } from "react-icons/fa";
+import { FaGithub, FaEye, FaArrowRight, FaChevronUp  } from "react-icons/fa";
 import { projects } from "@/data/portfolio";
+import { useState } from "react";
 
 export default function Projects() {
+  const[allProjects, setAllProjects] = useState(false)
+  const handleProjects = allProjects ? projects : projects.slice(0,4);
   return (
     <section id="projects" className="section-shell py-9">
       <div className="flex items-end justify-between">
@@ -16,16 +20,17 @@ export default function Projects() {
             Some of my recent work
           </p>
         </div>
-        <Link
-          href="#contact"
-          className="hidden items-center gap-2 text-[16px] text-purple-400 sm:flex"
+        <button
+          className="hidden  items-center gap-2 text-[16px] text-purple-400 sm:flex"
+          onClick={() => setAllProjects(!allProjects)}
         >
-          View All Projects <FaArrowRight />
-        </Link>
+          {allProjects ? "Less Projects" : "View All Projects"}
+          {allProjects ? <FaChevronUp  /> : <FaArrowRight /> } 
+        </button>
       </div>
 
       <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        {projects.map((project) => (
+        {handleProjects.map((project) => (
           <article
             key={project.title}
             className="glow-border overflow-hidden rounded-lg bg-gradient-to-br from-[#0b1938] to-[#050e24]"
@@ -53,17 +58,17 @@ export default function Projects() {
               </div>
               <div className="mt-3 flex gap-2">
                 <Link
-                  href="#contact"
+                  href={project.url}
                   className="gradient-button flex items-center gap-1 rounded px-2.5 py-1.5 text-[12px]"
                 >
                   Live Demo <FaEye />
                 </Link>
-                <Link
+                {/* <Link
                   href="#contact"
                   className="flex items-center gap-1 rounded border border-slate-600 px-2.5 py-1.5 text-[12px]"
                 >
                   <FaGithub /> GitHub
-                </Link>
+                </Link> */}
               </div>
             </div>
           </article>

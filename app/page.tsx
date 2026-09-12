@@ -10,6 +10,7 @@ import Footer from "@/components/Footer";
 import MobileNav from "@/components/MobileNav";
 import WhyChooseMe from "@/components/WhyChooseMe";
 import Process from "@/components/Process";
+import MobileBanner from "@/components/MobileBanner";
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <MobileBanner/>
         <About/>
         <Skills />
         <Services />

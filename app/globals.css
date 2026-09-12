@@ -115,25 +115,40 @@ header nav.gj-header a.gradient-button::after {
 }
 header nav.gj-header a.gradient-button:hover,
 .banner-bg .hover-button:hover,
-.banner-bg .gradient-button:hover  {
+.banner-bg .gradient-button:hover {
   color: #fff;
   -webkit-text-fill-color: #fff;
   background: linear-gradient(100deg, #167dff, #a30cff);
 }
 /* BANNER STYLE */
-section.banner-bg {
+.banner-bg {
   background-image: url("/images/banner-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 0 clamp(24px, 3.33vw, 48px);
   min-height: 700px;
+}
+.mobile-banner-bg {
+  background-image: url("/images/developer-hero-mobile.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 250px;
+  display: none;
 }
 
 .banner-bg .hover-button:hover {
   background: linear-gradient(90deg, #b127ff 0%, #157eff 100%);
 }
-
+@media (max-width: 1024px) {
+  .banner-bg {
+    background-image: none;
+    min-height: auto;
+  }
+  .mobile-banner-bg {
+    display: block;
+  }
+}
 @media (max-width: 640px) {
   .section-shell {
     width: min(100% - 28px, 1440px);

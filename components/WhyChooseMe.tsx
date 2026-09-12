@@ -2,7 +2,7 @@ import { whychooseme } from "@/data/portfolio";
 
 export default function WhyChooseMe() {
   return (
-    <section id="why-choose-me" className="section-shell py-9">
+    <section id="why-choose-me" className="section-shell py-5 md:py-9">
       <SectionTitle
         title="Why Choose Me"
         subtitle="Quality, creativity and reliable solutions"
@@ -61,7 +61,7 @@ export default function WhyChooseMe() {
 
             {/* Content */}
             <div className="min-w-0">
-              <h3 className="text-[16px] font-semibold leading-tight text-white">
+              <h3 className="text-[16px] font-medium leading-tight text-white">
                 {title}
               </h3>
 
@@ -85,7 +85,7 @@ function SectionTitle({
 }) {
   return (
     <div>
-      <h2 className="flex items-center text-[18px] font-semibold text-white">
+      <h2 className="flex items-center text-[18px] font-medium text-white">
         <span className="mr-1.5 inline-block h-2 w-2 rounded-full bg-purple-500 shadow-[0_0_8px_#a329ff]" />
         {title}
       </h2>

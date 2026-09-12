@@ -1,17 +1,22 @@
+
+
+import dynamic from "next/dynamic";
+
+
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
-import Skills from "@/components/Skills";
-import Services from "@/components/Services";
-import Projects from "@/components/Projects";
-import Testimonials from "@/components/Testimonials";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import MobileNav from "@/components/MobileNav";
-import WhyChooseMe from "@/components/WhyChooseMe";
-import Process from "@/components/Process";
-import MobileBanner from "@/components/MobileBanner";
 
+const MobileBanner = dynamic(() => import("@/components/MobileBanner"));
+const About = dynamic(() => import("@/components/About"));
+const Skills = dynamic(() => import("@/components/Skills"));
+const Services = dynamic(() => import("@/components/Services"));
+const WhyChooseMe = dynamic(() => import("@/components/WhyChooseMe"));
+const Process = dynamic(() => import("@/components/Process"));
+const Projects = dynamic(() => import("@/components/Projects"));
+const Testimonials = dynamic(() => import("@/components/Testimonials"));
+const Contact = dynamic(() => import("@/components/Contact"));
 
 export default function Home() {
   return (

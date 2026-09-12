@@ -11,10 +11,10 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="section-shell grid gap-7 py-12 lg:grid-cols-2"
+      className="section-shell grid gap-7 py-5 md:py-9 lg:grid-cols-2"
     >
       <div>
-        <h2 className="text-xl font-semibold">
+        <h2 className="text-xl font-medium">
           <span className="mr-2 inline-block h-2 w-2 rounded-full bg-purple-500" />
           Contact Me
         </h2>

@@ -2,7 +2,7 @@ import { services } from "@/data/portfolio";
 
 export default function Services() {
   return (
-    <section id="services" className="section-shell py-9">
+    <section id="services" className="section-shell py-5 md:py-9">
       <SectionTitle title="Services" subtitle="What I can do for you" />
       <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6">
         {services.map(({ title, text, icon: Icon }) => (
@@ -27,7 +27,7 @@ export default function Services() {
                  cursor-pointer"
           >
             <Icon className="mx-auto mb-3 text-4xl text-purple-400" />
-            <h3 className="text-[16px] font-semibold">{title}</h3>
+            <h3 className="text-[16px] font-medium">{title}</h3>
             <p className="mt-2 text-[14px] leading-5 text-slate-400">{text}</p>
           </div>
         ))}
@@ -45,7 +45,7 @@ function SectionTitle({
 }) {
   return (
     <div>
-      <h2 className="text-[18px] font-semibold">
+      <h2 className="text-[18px] font-medium">
         <span className="mr-2 inline-block h-2 w-2 rounded-full bg-purple-500" />
         {title}
       </h2>

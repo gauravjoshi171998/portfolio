@@ -34,7 +34,9 @@ body {
     ),
     var(--bg);
   color: #f7f9ff;
-  font-family: var(--font-inter);
+  /* font-family: var(--font-inter); */
+  font-family: var(--font-poppins);
+
 }
 
 h1,
@@ -80,7 +82,6 @@ a {
 header nav.gj-header a {
   position: relative;
   transition: color 0.3s ease;
-  font-weight: 500;
 }
 
 /* Underline */
@@ -108,6 +109,7 @@ header nav.gj-header a:hover {
 /* Left → Right underline */
 header nav.gj-header a:hover::after {
   transform: scaleX(1);
+  height: 2.5px;
 }
 
 header nav.gj-header a.gradient-button::after {
@@ -127,6 +129,8 @@ header nav.gj-header a.gradient-button:hover,
   background-position: center;
   background-repeat: no-repeat;
   min-height: 700px;
+  display: flex;
+  align-items: center;
 }
 .mobile-banner-bg {
   background-image: url("/images/developer-hero-mobile.png");

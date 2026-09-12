@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaBars, FaTimes, FaPaperPlane } from "react-icons/fa";
+import { FaBars, FaTimes, FaEnvelope } from "react-icons/fa";
 
 const links = [
   "Home",
@@ -11,14 +11,13 @@ const links = [
   "Services",
   "Projects",
   "Testimonials",
-  "Contact",
 ];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#00031c]/90 backdrop-blur-xl">
+    <header className="z-50 border-b border-white/10 bg-[#00031c]/90 backdrop-blur-xl">
       <div className="section-shell flex h-[70px] items-center justify-between">
         <Link
           href="#home"
@@ -44,16 +43,16 @@ export default function Header() {
               key={item}
               href={`#${item.toLowerCase()}`}
               onClick={() => setOpen(false)}
-              className="text-[16px] text-slate-300"
+              className="text-[16px] font-light text-slate-300"
             >
               {item}
             </Link>
           ))}
           <Link
             href="#contact"
-            className="gradient-button inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-purple-600 to-blue-500 px-4 py-3 text-[14px] font-semibold text-white transition hover:scale-[1.02] hover:shadow-[0_0_18px_rgba(139,92,246,0.35)]"
+            className="gradient-button inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 px-4 py-3 text-[14px] font-semibold text-white transition hover:scale-[1.02] hover:shadow-[0_0_18px_rgba(139,92,246,0.35)]"
           >
-            Hire Me <FaPaperPlane />
+            Contact <FaEnvelope />
           </Link>
         </nav>
 

@@ -2,7 +2,7 @@ import { skills } from "@/data/portfolio";
 
 export default function Skills() {
   return (
-    <section id="skills" className="section-shell py-9">
+    <section id="skills" className="section-shell py-5 md:py-9">
       <SectionTitle title="My Skills" subtitle="Technologies I work with" />
       <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-8">
         {skills.map(({ name, icon: Icon, color, url }) => (
@@ -39,7 +39,7 @@ function SectionTitle({
 }) {
   return (
     <div>
-      <h2 className="text-[18px] font-semibold">
+      <h2 className="text-[18px] font-medium">
         <span className="mr-2 inline-block h-2 w-2 rounded-full bg-purple-500 shadow-[0_0_10px_#a329ff]" />
         {title}
       </h2>

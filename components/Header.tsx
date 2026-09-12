@@ -17,7 +17,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="z-50 border-b border-white/10 bg-[#00031c]/90 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#00031c]/90 backdrop-blur-xl">
       <div className="section-shell flex h-[70px] items-center justify-between">
         <Link
           href="#home"

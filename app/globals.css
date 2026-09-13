@@ -132,14 +132,6 @@ header nav.gj-header a.gradient-button:hover,
   display: flex;
   align-items: center;
 }
-.mobile-banner-bg {
-  background-image: url("/images/developer-hero-mobile.png");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 250px;
-  display: none;
-}
 
 .banner-bg .hover-button:hover {
   background: linear-gradient(90deg, #b127ff 0%, #157eff 100%);
@@ -148,9 +140,6 @@ header nav.gj-header a.gradient-button:hover,
   .banner-bg {
     background-image: none;
     min-height: auto;
-  }
-  .mobile-banner-bg {
-    display: block;
   }
 }
 @media (max-width: 640px) {

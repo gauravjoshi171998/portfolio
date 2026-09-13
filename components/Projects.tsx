@@ -21,7 +21,7 @@ export default function Projects() {
           </p>
         </div>
         <button
-          className="hidden  items-center gap-2 text-[16px] text-purple-400 sm:flex"
+          className="hidden cursor-pointer  items-center gap-2 text-[16px] text-purple-400 sm:flex"
           onClick={() => setAllProjects(!allProjects)}
         >
           {allProjects ? "Less Projects" : "View All Projects"}

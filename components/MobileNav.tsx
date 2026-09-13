@@ -14,45 +14,45 @@ export default function MobileNav() {
       {/* Home */}
       <Link
         href="#home"
-        className="flex flex-col items-center justify-center gap-1 text-[12px] text-purple-400 transition-colors"
+        className="flex flex-col items-center justify-center gap-1 text-[11px] text-purple-400 transition-colors"
       >
-        <FaHome className="text-[18px]" />
+        <FaHome className="text-[16px]" />
         <span>Home</span>
       </Link>
 
       {/* Skills */}
       <Link
         href="#skills"
-        className="flex flex-col items-center justify-center gap-1 text-[12px] text-slate-400 transition-colors hover:text-purple-400"
+        className="flex flex-col items-center justify-center gap-1 text-[11px] text-slate-400 transition-colors hover:text-purple-400"
       >
-        <FaCode className="text-[18px]" />
+        <FaCode className="text-[16px]" />
         <span>Skills</span>
       </Link>
 
       {/* Services */}
       <Link
         href="#services"
-        className="flex flex-col items-center justify-center gap-1 text-[12px] text-slate-400 transition-colors hover:text-purple-400"
+        className="flex flex-col items-center justify-center gap-1 text-[11px] text-slate-400 transition-colors hover:text-purple-400"
       >
-        <FaBriefcase className="text-[18px]" />
+        <FaBriefcase className="text-[16px]" />
         <span>Services</span>
       </Link>
 
       {/* Projects */}
       <Link
         href="#projects"
-        className="flex flex-col items-center justify-center gap-1 text-[12px] text-slate-400 transition-colors hover:text-purple-400"
+        className="flex flex-col items-center justify-center gap-1 text-[11px] text-slate-400 transition-colors hover:text-purple-400"
       >
-        <FaFolderOpen className="text-[18px]" />
+        <FaFolderOpen className="text-[16px]" />
         <span>Projects</span>
       </Link>
 
       {/* Contact */}
       <Link
         href="#contact"
-        className="flex flex-col items-center justify-center gap-1 text-[12px] text-slate-400 transition-colors hover:text-purple-400"
+        className="flex flex-col items-center justify-center gap-1 text-[11px] text-slate-400 transition-colors hover:text-purple-400"
       >
-        <FaEnvelope className="text-[18px]" />
+        <FaEnvelope className="text-[16px]" />
         <span>Contact</span>
       </Link>
 

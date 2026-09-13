@@ -309,9 +309,15 @@ export const projects = [
     url:"https://shop-pawness.com/"
   },
     {
-    title: "Pawness Shop",
-    image: "/images/pawness.jpg",
+    title: "Global Screening Services",
+    image: "/images/gss.png",
     tags: ["Wordpress", "JS", "CSS"],
-    url:"https://shop-pawness.com/"
+    url:"https://www.globalscreeningservices.in/"
+  },
+   {
+    title: "The Sociable Society",
+    image: "/images/tss.png",
+    tags: ["Wordpress", "JS", "CSS"],
+    url:"https://thesociablesociety.com/"
   }
 ];

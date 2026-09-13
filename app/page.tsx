@@ -8,7 +8,6 @@ import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import MobileNav from "@/components/MobileNav";
 
-const MobileBanner = dynamic(() => import("@/components/MobileBanner"));
 const About = dynamic(() => import("@/components/About"));
 const Skills = dynamic(() => import("@/components/Skills"));
 const Services = dynamic(() => import("@/components/Services"));
@@ -24,7 +23,6 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <MobileBanner/>
         <About/>
         <Skills />
         <Services />

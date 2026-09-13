@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="540" viewBox="0 0 900 540">
-<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#35106d"/><stop offset="1" stop-color="#0755a8"/></linearGradient></defs>
-<rect width="900" height="540" fill="#050b20"/><rect x="35" y="35" width="830" height="470" rx="24" fill="url(#g)" opacity=".8"/>
-<text x="450" y="260" fill="white" font-size="38" font-family="Arial" text-anchor="middle">Project Screenshot</text>
-</svg>

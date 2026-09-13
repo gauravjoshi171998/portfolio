@@ -50,7 +50,7 @@ export default function Header() {
           ))}
           <Link
             href="#contact"
-            className="gradient-button inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 px-4 py-3 text-[14px] font-semibold text-white transition hover:scale-[1.02] hover:shadow-[0_0_18px_rgba(139,92,246,0.35)]"
+            className="gradient-button justify-center inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-600 to-blue-500 px-4 py-3 text-[14px] font-semibold text-white transition hover:scale-[1.02] hover:shadow-[0_0_18px_rgba(139,92,246,0.35)]"
           >
             Contact <FaEnvelope />
           </Link>

@@ -76,7 +76,7 @@ export default function Hero() {
             Available for Freelance Work
           </span>
           <p className="mt-5 text-xl font-semibold sm:text-2xl">Hi, I’m</p>
-          <h1 className="mt-0 text-4xl font-bold leading-[1.08] sm:text-5xl lg:text-6xl">
+          <h1 className="mt-2 text-4xl font-bold leading-[1.08] sm:text-5xl lg:text-6xl min-h-[2.16em] block">
             <span className="gradient-text">Gaurav Joshi</span>
             <br />
             {displayText}

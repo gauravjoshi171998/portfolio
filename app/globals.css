@@ -136,6 +136,21 @@ header nav.gj-header a.gradient-button:hover,
 .banner-bg .hover-button:hover {
   background: linear-gradient(90deg, #b127ff 0%, #157eff 100%);
 }
+
+@keyframes smoothBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.download-icon {
+  animation: smoothBounce 1.2s ease-in-out infinite;
+}
 @media (max-width: 1024px) {
   .banner-bg {
     background-image: none;

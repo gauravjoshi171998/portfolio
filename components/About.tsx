@@ -69,11 +69,11 @@ export default function About() {
 
               <div className="mt-2 flex items-center gap-1.5">
                 <a
-                  href="/Gaurav-Joshi-Resume.pdf"
+                  href="/images/Gaurav-Joshi-CV.pdf"
                   download
-                  className="inline-flex items-center gap-2 text-[14px] font-medium bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent"
+                  className="inline-flex items-center gap-2 text-[14px] font-medium text-purple-500"
                 >
-                  Download CV
+                  Download CV  <FaDownload className="text-[13px] download-icon" />
                 </a>
               </div>
           </div>

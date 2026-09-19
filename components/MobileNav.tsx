@@ -9,7 +9,7 @@ import {
 
 export default function MobileNav() {
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 grid h-16 grid-cols-5 border-t border-white/10 bg-[#030817]/95 backdrop-blur-xl md:hidden">
+    <nav className="fixed bottom-0 left-0 right-0 z-50 grid h-16 grid-cols-4 border-t border-white/10 bg-[#030817]/95 backdrop-blur-xl md:hidden">
 
       {/* Home */}
       <Link
@@ -48,13 +48,13 @@ export default function MobileNav() {
       </Link>
 
       {/* Contact */}
-      <Link
+      {/* <Link
         href="#contact"
         className="flex flex-col items-center justify-center gap-1 text-[11px] text-slate-400 transition-colors hover:text-purple-400"
       >
         <FaEnvelope className="text-[16px]" />
         <span>Contact</span>
-      </Link>
+      </Link> */}
 
     </nav>
   );
